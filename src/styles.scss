@@ -1,0 +1,41 @@
+@use "./styles/global";
+@use "./styles/preloader";
+@use "./styles/header";
+@use "./styles/progress";
+@use "./styles/typography";
+
+// @use "./styles/hero";
+@use "./styles/ui";
+@use "./styles/footer";
+// @use "./styles/documents";
+// @use "./styles/goelement";
+// @use "./styles/howto";
+// @use "./styles/requirements";
+// @use "./styles/grids";
+@use "./styles/up";
+@use "./styles/section";
+// @use "./styles/mainh";
+@use "./styles/img-grid";
+@use "./styles/overlay";
+@use "./styles/lang";
+// @use "./styles/grid";
+@use "./styles/stack";
+@use "./styles/socials";
+@use "./styles/contact";
+@use "./styles/aside";
+
+a {
+  text-decoration: inherit !important;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+section {
+  p {
+    max-width: 60ch;
+  }
+}

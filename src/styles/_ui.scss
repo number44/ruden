@@ -1,0 +1,57 @@
+.btns-group {
+  display: grid;
+  gap: var(--gap);
+  margin-top: 2rem;
+  place-items: center;
+  @media (min-width: 75rem) {
+    place-items: unset;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.btn {
+  border-radius: 0.2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 1fr 3ch;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  align-items: center;
+  background: var(--primary);
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  border-radius: 0.2rem;
+  position: relative;
+  svg,
+  img {
+    transition: rotate ease-in-out 0.3s;
+  }
+
+  span {
+    overflow: unset;
+  }
+
+  svg,
+  img {
+    margin-left: calc(var(--gap) / 2);
+    height: 2rem;
+    width: 2rem;
+  }
+}
+.btn-secondary {
+  background: white;
+  color: var(--primary);
+  border: var(--primary) 0.2rem solid;
+}
+.btns {
+  display: flex;
+  justify-content: flex-start;
+}
+
+a {
+  text-decoration: none;
+}

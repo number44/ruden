@@ -1,0 +1,98 @@
+:root {
+  // "heading-1": "clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem)",
+  // "heading-2": "clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem)",
+  // "heading-3": "clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem)",
+  // "heading-4": "clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem)",
+  // "heading-5": "clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem)",
+  // "heading-6": "clamp(1.2rem, calc(1.05rem + 0.21vw), 1.09rem)",
+  // "paragraph": "clamp(0.96rem, calc(0.89rem + 0.1vw), 0.91rem)",
+  // "small": "clamp(0.96rem, calc(0.89rem + 0.1vw), 0.91rem)"
+  --wp--custom--typography--font-size--small: clamp(
+    0.8rem,
+    0.17vw + 0.76rem,
+    0.89rem
+  );
+  --wp--custom--typography--font-size--paragraph: clamp(
+    0.96rem,
+    calc(0.89rem + 0.1vw),
+    0.91rem
+  );
+  --wp--custom--typography--font-size--heading-6: clamp(
+    1.2rem,
+    calc(1.05rem + 0.21vw),
+    1.09rem
+  );
+  --wp--custom--typography--font-size--heading-5: clamp(
+    1.31rem,
+    calc(1.24rem + 0.37vw),
+    1.5rem
+  );
+  --wp--custom--typography--font-size--heading-4: clamp(
+    1.58rem,
+    calc(1.46rem + 0.59vw),
+    1.88rem
+  );
+  --wp--custom--typography--font-size--heading-3: clamp(
+    1.89rem,
+    calc(1.71rem + 0.89vw),
+    2.34rem
+  );
+  --wp--custom--typography--font-size--heading-2: clamp(
+    2.27rem,
+    calc(2.01rem + 1.29vw),
+    2.93rem
+  );
+  --wp--custom--typography--font-size--heading-1: clamp(
+    2.72rem,
+    calc(2.36rem + 1.83vw),
+    3.66rem
+  );
+}
+body {
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-weight: 900;
+}
+h1 {
+  font-size: var(--wp--custom--typography--font-size--heading-1);
+}
+
+h2 {
+  font-size: var(--wp--custom--typography--font-size--heading-2);
+}
+
+h3 {
+  font-size: var(--wp--custom--typography--font-size--heading-3);
+}
+
+h4 {
+  font-size: var(--wp--custom--typography--font-size--heading-4);
+}
+h5 {
+  font-size: var(--wp--custom--typography--font-size--heading-5);
+}
+
+h6 {
+  font-size: var(--wp--custom--typography--font-size--heading-6);
+}
+p {
+  font-size: 1rem;
+  // max-width: 60ch;
+}
+small {
+  font-size: var(--wp--custom--typography--font-size--small);
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: 900;
+}

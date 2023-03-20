@@ -1,0 +1,19 @@
+#contact {
+  .content {
+    display: grid;
+    @media (min-width: 60rem) {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+}
+.contact-row {
+  display: flex;
+  gap: 0.5rem;
+  padding-block: 0.5rem;
+  svg {
+    width: 2rem;
+  }
+}
+.test {
+  background: darkred;
+}

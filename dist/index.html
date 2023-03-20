@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My App</title>
+    <script type="module" crossorigin src="/assets/index-66ecd4c7.js"></script>
+    <link rel="stylesheet" href="/assets/index-06e9e068.css">
+  </head>
+  <body>
+    <div class="overlay hide-overlay"></div>
+    <a href="#root" id="up" class="">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4.5 15.75l7.5-7.5 7.5 7.5"
+        />
+      </svg>
+    </a>
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <header>
+      <nav class="container wide">
+        <a href="#" class="brand"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
+            />
+          </svg>
+          <span>zdjecie-dokument.pl</span>
+        </a>
+        <ul class="nav-links">
+          <li>
+            <a data-text="Menu1" href="#">Menu1</a>
+          </li>
+          <li><a data-text="Menu2" href="#">Menu2</a></li>
+          <li><a data-text="Menu3" href="#">Menu3</a></li>
+          <li><a data-text="Menu4" href="#">Menu4</a></li>
+        </ul>
+        <div class="langs">
+          <button class="lang-btn">
+            <span>PL</span>
+
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </button>
+          <div class="lang-list hide-lang-list">
+            <a href="#">PL</a><a href="#">En</a><a href="#">Ru</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="root">
+      <section class="section full-height">
+        <div class="container stack">
+          <div class="stack__text shadow">
+            <h1 data-text="Lorem, ipsum.">Lorem, ipsum.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae assumenda consectetur aliquam atque, earum natus.
+            </p>
+            <div class="btns-group">
+              <button class="btn btn-primary">
+                <span>Realizacje</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z"
+                  />
+                </svg>
+              </button>
+              <button class="btn btn-secondary">
+                <span> Secondary </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="stack__img">
+            <figure>
+              <img
+                src="https://images.pexels.com/photos/15517793/pexels-photo-15517793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="hero">
+
+        <div class="container">
+          <div class="left box">
+            <h1>Lorem, ipsum.</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequatur, veritatis!
+            </p>
+            <div class="btns-group">
+              <div class="btn btn-primary">
+                <span>Realizacje</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z"
+                  />
+                </svg>
+              </div>
+              <div class="btn btn-secondary">
+                <span> Secondary </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="numbers">
+              <div class="number-column">
+                <span class="number"> 24</span>
+                <p>Lata działalności</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <figure>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+                class="wp-image-8"
+                srcset="
+                  https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 682w,
+                  https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1  300w
+                "
+                sizes="(max-width: 682px) 100vw, 682px"
+                width="682"
+                height="386"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container grid-2">
+          <div class="box">
+            <h1 class="" data-target>Cel 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              consequatur tempore iste, asperiores corrupti vel obcaecati alias
+              dolore ipsum repellendus impedit eos praesentium vitae?
+              Accusantium nulla quaerat optio rem! Amet!
+            </p>
+            <div class="btns-group">
+              <div class="btn btn-primary">
+                <span>Realizacje</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z"
+                  />
+                </svg>
+              </div>
+              <div class="btn btn-secondary">
+                <span> Secondary </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-grid">
+              <figure>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="wp-image-8"
+                  srcset="
+                    https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 682w,
+                    https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1  300w
+                  "
+                  sizes="(max-width: 682px) 100vw, 682px"
+                  width="682"
+                  height="386"
+                />
+              </figure>
+              <figure>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="wp-image-8"
+                  srcset="
+                    https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 682w,
+                    https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1  300w
+                  "
+                  sizes="(max-width: 682px) 100vw, 682px"
+                  width="682"
+                  height="386"
+                />
+              </figure>
+              <figure>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="wp-image-8"
+                  srcset="
+                    https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 682w,
+                    https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1  300w
+                  "
+                  sizes="(max-width: 682px) 100vw, 682px"
+                  width="682"
+                  height="386"
+                />
+              </figure>
+              <figure>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="wp-image-8"
+                  srcset="
+                    https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 682w,
+                    https://images.pexels.com/photos/14811468/pexels-photo-14811468.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1  300w
+                  "
+                  sizes="(max-width: 682px) 100vw, 682px"
+                  width="682"
+                  height="386"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>   -->
+    </main>
+    <footer>
+      <div class="container wide">footer</div>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.box {
+  h1 {
+    position: relative;
+    margin-bottom: 2rem;
+    &::after {
+      transition: all ease-in-out 0.3s;
+      height: 0.2rem;
+      width: 0%;
+      animation-name: anim;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      content: "";
+      position: absolute;
+      @media (min-width: 75rem) {
+        left: 0%;
+        transform: translateX(0);
+      }
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--secondary);
+    }
+  }
+}
+.box-center {
+  text-align: center;
+  .btns-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    align-self: center;
+  }
+}
+
+.box {
+  center {
+  }
+}

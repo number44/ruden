@@ -1,0 +1,59 @@
+.socials {
+  position: fixed;
+  left: 1rem;
+  transform: translateY(-50%);
+  top: 40%;
+  bottom: 1rem;
+  perspective: 1000px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: fit-content;
+  z-index: 100;
+
+  .social {
+    // transition: all ease-in-out 0.7s;
+    // transition: transform ease-in-out 0.3s;
+    opacity: 0;
+
+    border-radius: 0.3rem;
+    transform-style: preserve-3d;
+    transform: translateX(calc(-2rem - 100%));
+    transform-origin: right;
+    cursor: pointer;
+    filter: drop-shadow(10px 10px 30px var(--primary));
+    opacity: 0.6;
+    background: white;
+    &:hover {
+      opacity: 1;
+      filter: drop-shadow(10px 10px 30px var(--primary));
+    }
+    box-shadow: 0px 0px 3px var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+  }
+  svg {
+    width: 2rem;
+
+    path {
+      color: var(--primary);
+    }
+  }
+}
+
+.show {
+  transform: translateX(0vw) !important;
+}
+
+@for $i from 1 through 3 {
+  .social:nth-child(#{$i}) {
+    transition: transform ease-in-out 0.7s $i * 300ms, opacity ease-in-out 0.3s,
+      filter ease-in-out 0.3s;
+  }
+}

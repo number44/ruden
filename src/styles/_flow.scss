@@ -1,0 +1,40 @@
+.container {
+  max-width: 90rem;
+  margin-inline: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.layout {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  & > * {
+    padding: 1rem;
+  }
+}
+header {
+  background: hsl(240, 65%, 35%);
+}
+main {
+  background: hsl(240, 13%, 29%);
+}
+footer {
+  background: hsl(240, 65%, 55%);
+  a {
+    color: inherit;
+  }
+}

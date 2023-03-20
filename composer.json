@@ -1,0 +1,18 @@
+{
+    "name": "daniel/lesio-wp-page",
+    "description": "wordpress theme fse",
+    "type": "project",
+    "license": "UNLICENSED",
+    "autoload": {
+        "psr-4": {
+            "Daniel\\LesioWpPage\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "number44",
+            "email": "daniel.lesiewicz.dev@gmail.com"
+        }
+    ],
+    "require": {}
+}
