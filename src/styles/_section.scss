@@ -1,3 +1,7 @@
+.section-divider {
+  grid-column: 1 /-1;
+  height: 6rem;
+}
 .content {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -9,6 +13,7 @@
   @media (min-width: 62rem) {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .section-title {
     grid-column: 1 /-1;
     position: relative;
