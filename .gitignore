@@ -1,0 +1,7 @@
+node_modules
+.vscode 
+dist
+vendor
+composer.lock
+functions.php-back
+package-lock.json
