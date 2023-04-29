@@ -2,18 +2,30 @@
   .content {
     display: grid;
     @media (min-width: 60rem) {
-      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      grid-template-columns: auto 2fr;
     }
   }
 }
 .contact-row {
   display: flex;
   gap: 0.5rem;
-  padding-block: 0.5rem;
+  padding-block: 0.2rem;
   svg {
     width: 2rem;
   }
 }
-.test {
-  background: darkred;
+#map {
+  box-shadow: 0px 0px 3px var(--dark);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.pigeon-attribution {
+  display: none;
 }

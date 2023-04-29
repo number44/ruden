@@ -3,7 +3,7 @@
 @use "./styles/header";
 @use "./styles/progress";
 @use "./styles/typography";
-
+@use "./styles/advantages";
 // @use "./styles/hero";
 @use "./styles/ui";
 @use "./styles/footer";
@@ -23,7 +23,13 @@
 @use "./styles/socials";
 @use "./styles/contact";
 @use "./styles/aside";
-
+.swiper-pagination-bullet {
+  opacity: 0;
+  display: none !important;
+  path {
+    fill: red;
+  }
+}
 a {
   text-decoration: inherit !important;
 }

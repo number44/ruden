@@ -9,7 +9,12 @@
   gap: 2rem;
   grid-template-columns: repeat(1, 1fr);
   text-align: center;
-
+  @media (max-width: 60rem) {
+    // .box:nth-child(odd) {
+    .box-2 {
+      grid-row: -1;
+    }
+  }
   @media (min-width: 62rem) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -32,6 +37,17 @@
     }
   }
   .box {
+    @media (max-width: 60rem) {
+      p {
+        margin-inline: auto;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
     .btns {
       display: flex;
       justify-content: flex-start;
