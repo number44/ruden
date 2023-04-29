@@ -25,6 +25,7 @@ aside {
     transition: background 0.3s ease-in-out;
     &:hover {
       background: #ccc;
+      color: var(--primary);
     }
   }
 }
