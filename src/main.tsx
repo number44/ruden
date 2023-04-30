@@ -3,13 +3,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 // import App from "./App";
 import "./styles.scss";
-import anime from "animejs";
 
 ReactDOM.createRoot(document.getElementById("map") as HTMLElement).render(
   <React.StrictMode>
     <PigMap />
   </React.StrictMode>
 );
+
 import detectScroll from "./utils/scrolling";
 const progressBar = document.querySelector(".progress-bar") as HTMLElement;
 const preloader = document.querySelector("#preloader");
@@ -77,6 +77,7 @@ function openLang() {
 // import function to register Swiper custom elements
 import { register } from "swiper/element/bundle";
 import { PigMap } from "./components/PigMap";
+import debounce from "./utils/debounce";
 // register Swiper custom elements
 
 register();
@@ -102,3 +103,7 @@ function showAside() {
   overlay?.addEventListener("click", hideAside);
   aside.addEventListener("click", hideAside);
 }
+
+window.addEventListener("resize", (event) => {
+  console.log("event", event);
+});

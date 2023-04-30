@@ -37,12 +37,19 @@
     }
   }
   .box {
+    a {
+      transition: transform ease-in-out 0.3s;
+    }
+    a:hover {
+      transform: scale(1.02);
+    }
     @media (max-width: 60rem) {
       p {
         margin-inline: auto;
       }
       a {
         display: flex;
+        display: inline-block;
         justify-content: center;
         text-align: center;
       }

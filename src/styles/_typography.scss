@@ -8,14 +8,15 @@
   // "paragraph": "clamp(0.96rem, calc(0.89rem + 0.1vw), 0.91rem)",
   // "small": "clamp(0.96rem, calc(0.89rem + 0.1vw), 0.91rem)"
   --wp--custom--typography--font-size--small: clamp(
-    0.8rem,
-    0.17vw + 0.76rem,
-    0.89rem
-  );
-  --wp--custom--typography--font-size--paragraph: clamp(
     0.96rem,
     calc(0.89rem + 0.1vw),
     0.91rem
+  );
+  --wp--custom--typography--font-size--paragraph: clamp(
+    1,
+    1rem,
+    calc(1.3rem + 0.1vw),
+    1.7rem
   );
   --wp--custom--typography--font-size--heading-6: clamp(
     1.2rem,
@@ -49,7 +50,9 @@
   );
 }
 body {
+  color: var(--dark);
   line-height: 1.5;
+  letter-spacing: 0.1rem;
 }
 h1,
 h2,
@@ -84,7 +87,7 @@ h6 {
   font-size: var(--wp--custom--typography--font-size--heading-6);
 }
 p {
-  font-size: 1rem;
+  font-size: var(--wp--custom--typography--font-size--paragraph);
   // max-width: 60ch;
 }
 small {

@@ -9,7 +9,6 @@
   }
 }
 .btn {
-  border-radius: 0.2rem;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -26,10 +25,17 @@
   text-transform: uppercase;
   align-items: center;
   background: var(--primary);
+
+  box-shadow: 5px 5px 3px #434343;
+
   cursor: pointer;
   transition: all ease-in-out 0.3s;
   border-radius: 0.2rem;
   position: relative;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 3px #434343;
+  }
   svg,
   img {
     transition: rotate ease-in-out 0.3s;

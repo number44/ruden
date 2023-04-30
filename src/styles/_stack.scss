@@ -1,8 +1,12 @@
 .stack {
+  padding-top: 7rem;
   position: relative;
-  min-height: 100vh;
-  min-height: 100dvh;
+  // min-height: 100vh;
   display: grid;
+  @media (max-width: 59rem) {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
   gap: 1rem;
   & > * {
     grid-row: 1/-1;
@@ -12,6 +16,8 @@
     position: relative;
     display: grid;
     @media (max-width: 60rem) {
+      min-height: auto;
+
       &::after {
         position: absolute;
         inset: 0;
@@ -76,6 +82,14 @@
     }
   }
   .stack__text {
+    @media (max-width: 59.99rem) {
+      background: rgba(56, 49, 49, 0);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4.5px);
+      -webkit-backdrop-filter: blur(4.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
     @media (max-width: 60rem) {
       text-align: center;
       color: white;
@@ -85,33 +99,13 @@
     transition: all ease-in-out 0.3s;
     padding: 20px;
     z-index: 1;
-    @media (min-width: 60rem) {
-      &:hover h1::after {
-        clip-path: circle(50% at 50% 50%);
-      }
-    }
+
     h1 {
+      color: var(--primary-1);
       position: relative;
       overflow: hidden;
       overflow: hidden;
-
-      &::after {
-        clip-path: circle(0.5% at 50% 50%);
-        content: attr(data-text);
-        font-weight: bold;
-        transition: clip-path ease-in-out 0.3s;
-        color: var(--primary);
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: 0;
-        bottom: 0;
-        height: 100%;
-        width: 100%;
-        inset: 0;
-        z-index: 1;
-      }
+      color: var(--primary);
     }
     p {
       max-width: 60ch;
@@ -126,22 +120,12 @@
 }
 @media screen and (min-width: 60em) and (orientation: landscape) {
   .stack {
+    color: var(--dark);
     grid-template-columns: 1fr 1fr;
   }
   .stack__text {
     align-items: start !important;
     grid-column: 1;
-    .btn {
-      &:hover {
-        scale: 1.02;
-        &::before {
-          opacity: 1;
-        }
-        svg {
-          rotate: 10deg;
-        }
-      }
-    }
   }
   .stack__img {
     grid-column: 2;

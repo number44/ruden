@@ -9,6 +9,7 @@ footer {
   background: var(--primary);
   color: var(--light);
   z-index: 12;
+  box-shadow: 0px 0px 3px var(--primary);
   .container {
     letter-spacing: 0.5rem;
     font-size: 2rem;
