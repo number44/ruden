@@ -88,7 +88,10 @@ h6 {
 }
 p {
   font-size: var(--wp--custom--typography--font-size--paragraph);
-  // max-width: 60ch;
+}
+p,
+li {
+  max-width: 60ch;
 }
 small {
   font-size: var(--wp--custom--typography--font-size--small);

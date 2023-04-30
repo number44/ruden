@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 // import App from "./App";
 import "./styles.scss";
+import anim from "./utils/anim";
 
 ReactDOM.createRoot(document.getElementById("map") as HTMLElement).render(
   <React.StrictMode>
@@ -47,6 +48,7 @@ const init = () => {
   if (preloader) {
     preloader.classList.add("hide-preloader");
   }
+  anim();
 };
 window.onload = init;
 const jumpTargets = document.querySelectorAll(`[data-name]`);
