@@ -42,6 +42,7 @@ const scrolling = (sp: number) => {
     up.classList.remove("show");
   }
 };
+import accordionScript from "./blocks/accordion";
 detectScroll(scrolling, 40);
 
 const init = () => {
@@ -49,6 +50,7 @@ const init = () => {
     preloader.classList.add("hide-preloader");
   }
   anim();
+  accordionScript();
 };
 window.onload = init;
 const jumpTargets = document.querySelectorAll(`[data-name]`);

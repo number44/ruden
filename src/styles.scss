@@ -13,6 +13,7 @@
 // @use "./styles/requirements";
 // @use "./styles/grids";
 @use "./styles/up";
+@use "./styles/layout";
 @use "./styles/section";
 // @use "./styles/mainh";
 @use "./styles/img-grid";
@@ -23,11 +24,12 @@
 @use "./styles/socials";
 @use "./styles/contact";
 @use "./styles/aside";
+@use "./styles/accordion";
 .swiper-pagination-bullet {
   opacity: 0;
   display: none !important;
   path {
-    fill: red;
+    fill: var(--primary-1);
   }
 }
 a {
