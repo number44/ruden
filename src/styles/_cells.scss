@@ -6,6 +6,11 @@
     grid-template-columns: repeat(4, 1fr) !important;
   }
   .cell {
+    transition: all ease-in-out 0.3s;
+    &:hover {
+      box-shadow: 0px 0px 3px #434343;
+    }
+    box-shadow: 5px 5px 3px #434343;
     cursor: pointer;
     display: grid;
     position: relative;
