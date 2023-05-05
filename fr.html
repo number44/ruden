@@ -2,11 +2,1060 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>APPARTEMENTS M2M3 À ŁÓDŹ.</title>
   </head>
-  <body>
-    <h1>Fr</h1>
+  <body id="body">
+    <div class="overlay hide-overlay"></div>
+    <a href="#body" id="up" class="">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4.5 15.75l7.5-7.5 7.5 7.5"
+        />
+      </svg>
+    </a>
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <header>
+      <nav class="container wide">
+        <a href="#" class="brand">
+          <img src="logo.svg" alt="" />
+        </a>
+        <div class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a data-text="à propos" href="#about">À propos de nous</a>
+          </li>
+          <li>
+            <a data-text="investissements" href="#investments"
+              >Investissements</a
+            >
+          </li>
+          <li>
+            <a data-text="location" href="#renting">Location</a>
+          </li>
+          <li>
+            <a data-text="ventes" href="#sales">Ventes</a>
+          </li>
+          <li>
+            <a data-text="réalisations" href="#realizations">Réalisations</a>
+          </li>
+          <li>
+            <a data-text="contact" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="langs">
+          <button class="lang-btn">
+            <span>FR</span>
+
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div class="lang-list hide-lang-list">
+      <a href="index.html">PL</a>
+      <a href="en.html">En</a>
+      <a href="ru.html">Ru</a>
+
+      <a href="es.html">ES</a>
+      <a href="gr.html">DE</a>
+      <a href="fr.html">FR</a>
+    </div>
+    <aside>
+      <a data-text="à propos" href="#about">À propos de nous</a>
+      <a data-text="investissements" href="#investments" href="#"
+        >Investissements</a
+      >
+      <a data-text="location" href="#renting">Location</a>
+      <a data-text="ventes" href="#sales">Ventes</a>
+      <a data-text="réalisations" href="#realizations">Réalisations</a>
+      <a data-text="contact" href="#contact">Contact</a>
+    </aside>
+    <div class="socials">
+      <div class="social">
+        <svg
+          class="h-5 w-5"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_28_2)">
+            <path
+              d="M23.446 18L24.335 12.209H18.778V8.45101C18.778 6.86701 19.554 5.32201 22.043 5.32201H24.569V0.392007C24.569 0.392007 22.277 0.00100708 20.085 0.00100708C15.509 0.00100708 12.518 2.77501 12.518 7.79601V12.21H7.431V18.001H12.518V32.001H18.778V18.001L23.446 18Z"
+              fill="#952352"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_28_2">
+              <rect width="32" height="32" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="social">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+          />
+        </svg>
+      </div>
+      <div class="social">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <main>
+      <section id="hero">
+        <div class="container stack">
+          <div class="stack__text shadow">
+            <h1 data-before="M" data-after="Łodzi">Appartements à Łódź</h1>
+            <p>
+              Êtes-vous à la recherche d'un appartement ou d'une chambre ? Ou
+              peut-être souhaitez-vous investir dans des appartements à louer.
+              Vous êtes au bon endroit, nous serons heureux de vous aider.
+            </p>
+            <div class="btns-group">
+              <a href="#realizations">
+                <button class="btn btn-primary">
+                  <span>Réalisations</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z"
+                    />
+                  </svg>
+                </button>
+              </a>
+              <a href="#contact">
+                <button class="btn btn-secondary">
+                  <span>Contact</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
+                    />
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="stack__img">
+            <figure class="frame">
+              <img srcset="images/m2m3.png" src="images/m2m3.png" alt="" />
+              <figcaption>
+                <div class="hero-social">
+                  <svg
+                    class="h-5 w-5"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_28_2)">
+                      <path
+                        d="M23.446 18L24.335 12.209H18.778V8.45101C18.778 6.86701 19.554 5.32201 22.043 5.32201H24.569V0.392007C24.569 0.392007 22.277 0.00100708 20.085 0.00100708C15.509 0.00100708 12.518 2.77501 12.518 7.79601V12.21H7.431V18.001H12.518V32.001H18.778V18.001L23.446 18Z"
+                        fill="#952352"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_28_2">
+                        <rect width="32" height="32" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="hero-social">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                    />
+                  </svg>
+                </div>
+                <div class="hero-social">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                    />
+                  </svg>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="cells">
+        <div class="container">
+          <div class="card">
+            <div class="icon">
+              <img src="icons/icon-calendar.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <div class="number" data-number="14">0</div>
+              <p>Années d'expérience</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="icons/icon-keys.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <div class="number" data-number="500">0</div>
+              <p>Propriétés vendues</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="icons/icon-plan.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <div class="number" data-number="100">0</div>
+              <p>Investissement clé en main</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="icons/icon-doc.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <div class="number" data-number="200">0</div>
+              <p>Accords de location mensuels</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section">
+        <div class="container content">
+          <h1 class="section-title">À propos de nous</h1>
+          <div class="box">
+            <p>
+              Notre entreprise opère continuellement sur le marché immobilier de
+              Łódź depuis 2010. Nous opérons principalement dans le secteur
+              immobilier résidentiel pour les clients individuels et les
+              investisseurs. Depuis 2013, nous fournissons également des
+              services pour le marché de la location à moyen et long terme de
+              biens résidentiels.
+            </p>
+            <br />
+            <ul>
+              <li>
+                Nous nous distinguons par notre approche individuelle et de
+                partenariat.
+              </li>
+              <li>
+                Nous opérons selon des normes développées grâce à de nombreuses
+                années d'expérience.
+              </li>
+              <li>
+                Nous avons une large connaissance et une expertise, mais
+                surtout, de nombreuses années de pratique.
+              </li>
+              <li>
+                Nous sommes propriétaires de dizaines de propriétés locatives.
+              </li>
+              <li>
+                Nous travaillons sur une base financière solide, comprenant nos
+                propres biens immobiliers ainsi que ceux confiés, et avons un
+                soutien personnel et technique. Grâce à cela, nous sommes un
+                partenaire fiable, digne de confiance et prévisible pour nos
+                clients. Nous augmentons leur richesse en investissant dans des
+                biens locatifs éprouvés.
+              </li>
+              <li>
+                C'est pourquoi nous sommes un partenaire solide et digne de
+                confiance pour nos clients. Nous augmentons leur richesse en
+                investissant dans des propriétés locatives.
+              </li>
+            </ul>
+          </div>
+          <div class="box box-2">
+            <figure>
+              <img
+                srcset="images/piotrkowska.jpg"
+                src="images/piotrkowska.jpg"
+                alt="piotrkowska"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="investments" class="section">
+        <div class="container content">
+          <h1 class="section-title">Investissements</h1>
+          <div class="box">
+            <ul>
+              <li>
+                Collaborer avec nous est un investissement sûr dans des
+                propriétés soigneusement sélectionnées qui apportent un bénéfice
+                garanti sous forme de loyer ainsi qu'une croissance stable de la
+                valeur.
+              </li>
+              <li>
+                Sur la base d'une formule unique de collaboration, nous prenons
+                en charge toutes les responsabilités liées à la location de la
+                propriété.
+              </li>
+              <li>
+                Nous fournissons un investissement clé en main, entièrement
+                équipé de documentation et d'une séance photo professionnelle,
+                souvent déjà loué.
+              </li>
+              <li>
+                Nous assurons une gestion professionnelle des propriétés louées.
+              </li>
+              <li>
+                Nous garantissons des règles équitables - nous sommes
+                responsables de la maintenance de la propriété et des
+                réparations nécessaires avec ZÉRO RISQUE, car le locataire est
+                la société <strong>Rent a Room</strong>, l'investisseur reçoit
+                le loyer fixe dû toujours à temps, indépendamment de l'état
+                actuel de la propriété.
+              </li>
+            </ul>
+          </div>
+          <div class="box box-2 p-1">
+            <div class="img-grid">
+              <figure>
+                <img
+                  srcset="procesy/inwestycje/i1.jpg"
+                  src="procesy/inwestycje/i1.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </figure>
+              <figure>
+                <img
+                  srcset="procesy/inwestycje/i2.jpg"
+                  src="procesy/inwestycje/i2.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </figure>
+              <figure>
+                <img
+                  srcset="procesy/inwestycje/i3.jpg"
+                  src="procesy/inwestycje/i3.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </figure>
+              <figure>
+                <img
+                  srcset="procesy/inwestycje/i4.jpg"
+                  src="procesy/inwestycje/i4.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cells">
+        <div class="container">
+          <div class="card">
+            <div class="icon">
+              <img src="icons/icon-plan.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <h3>Projet</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="icons/ladder.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <h3>Réalisation</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="icons/stamp.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <h3>Garantie</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="icons/cash.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <h3>Bénéfice</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="renting" class="section">
+        <div class="container content">
+          <h1 class="section-title">Location</h1>
+          <div class="box">
+            <ul>
+              <li>
+                Nous proposons une large gamme d'appartements, de chambres et de
+                mini-appartements.
+              </li>
+              <li>
+                Possibilité de changer d'appartement pendant la durée du
+                contrat.
+              </li>
+              <li>
+                Nous offrons des emplacements soigneusement sélectionnés, les
+                meilleurs endroits à Łódź.
+              </li>
+              <li>
+                Nous avons une vaste expérience dans le service des étrangers,
+                nous offrons des accords bilingues et un service dans plusieurs
+                langues.
+              </li>
+              <li>
+                Nous sommes ouverts à la coopération avec tout locataire,
+                indépendamment de l'âge, du sexe, de la race, de la religion ou
+                de l'orientation sexuelle.
+              </li>
+              <li>
+                Nous garantissons une sécurité à 100% du contrat de location,
+                une pleine légalité, une facture de TVA et nous réglons la
+                caution conformément aux dispositions du contrat.
+              </li>
+              <li>
+                Le locataire ne paie pas de commission ni de frais
+                supplémentaires.
+              </li>
+              <li>
+                Nos offres sont basées sur des photos authentiques et des
+                descriptions des locaux proposés.
+              </li>
+              <li>Nous veillons à maintenir le niveau de nos locaux.</li>
+              <li>
+                Nous fournissons des appartements rénovés de haute qualité, avec
+                de nouvelles installations et un équipement complet.
+              </li>
+              <li>Les chambres sont indépendantes et verrouillables.</li>
+              <li>
+                Nous fournissons un accès wifi dans les locaux résidentiels avec
+                des chambres.
+              </li>
+              <li>
+                Nous assurons une pleine discrétion, nous ne visitons pas les
+                locaux inutilement, sauf en cas d'urgence.
+              </li>
+            </ul>
+          </div>
+          <div class="box box-2">
+            <div class="img-grid">
+              <figure>
+                <img
+                  srcset="procesy/wynajem/w1.jpg"
+                  src="procesy/wynajem/w1.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </figure>
+              <figure>
+                <img
+                  srcset="procesy/wynajem/w2.jpg"
+                  src="procesy/wynajem/w2.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </figure>
+              <figure>
+                <img
+                  srcset="procesy/wynajem/w3.jpg"
+                  src="procesy/wynajem/w3.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </figure>
+              <figure>
+                <img
+                  srcset="procesy/wynajem/w4.jpg"
+                  src="procesy/wynajem/w4.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sales" class="section">
+        <div class="container content">
+          <h1 class="section-title">Vente</h1>
+          <div class="box">
+            <ul>
+              <li>
+                Possibilité de chercher un appartement en fonction des besoins
+                du client
+              </li>
+              <li>Nous offrons les emplacements les plus recherchés</li>
+              <li>Achat directement auprès de notre entreprise</li>
+              <li>
+                Garantie de la légalité et de la sécurité de la transaction
+              </li>
+              <li>
+                L'investisseur est une entreprise opérant sur le marché
+                immobilier depuis <strong>2010</strong>
+              </li>
+              <li>
+                Nous avons des années d'expérience sur le marché immobilier à
+                Łódź
+              </li>
+              <li>
+                Nous fournissons une assistance en matière fiscale et juridique
+                liée aux transactions immobilières
+              </li>
+              <li>Possibilité de régler sous forme d'échange de propriété</li>
+              <li>
+                Nous garantissons des frais de notaire moins élevés, un service
+                rapide et amical dans un bureau de notaire qui coopère avec nous
+              </li>
+              <li>
+                Nous garantissons que les travaux de rénovation sont effectués
+                conformément au code du bâtiment et aux réglementations légales
+              </li>
+              <li>
+                Rénovation confirmée par une facture de TVA accompagnée d'une
+                garantie pour les services rendus
+              </li>
+              <li>
+                Nous permettons la finition intérieure selon les souhaits du
+                client
+              </li>
+              <li>
+                Nous nous occupons de toutes les procédures liées à la
+                transaction
+              </li>
+              <li>Recommandations de nombreux clients satisfaits</li>
+            </ul>
+          </div>
+          <div class="box box-2">
+            <div class="img-grid">
+              <figure>
+                <img
+                  srcset="procesy/sprzedaz/s1.jpg"
+                  src="procesy/sprzedaz/s1.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </figure>
+              <figure>
+                <img
+                  srcset="procesy/sprzedaz/s2.jpg"
+                  src="procesy/sprzedaz/s2.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </figure>
+              <figure>
+                <img
+                  srcset="procesy/sprzedaz/s3.jpg"
+                  src="procesy/sprzedaz/s3.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </figure>
+              <figure>
+                <figure>
+                  <img
+                    srcset="procesy/sprzedaz/s4.jpg"
+                    src="procesy/sprzedaz/s4.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </figure>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container content">
+          <h1 class="section-title">Vous pouvez nous trouver sur :</h1>
+        </div>
+        <div class="container cells-2">
+          <a href="https://pepehousing.com/" class="cell">
+            <div class="cell-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                />
+              </svg>
+              <small>pepehousing.com</small>
+            </div>
+            <div class="cell-img">
+              <img src="coop/pepehousing-logo.png" loading="lazy" alt="" />
+            </div>
+          </a>
+          <a href="https://www.spotahome.com/" class="cell">
+            <div class="cell-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                />
+              </svg>
+              <small>spotahome.com</small>
+            </div>
+            <div class="cell-img">
+              <img src="coop/spatahome.svg" alt="" />
+            </div>
+          </a>
+          <a href="https://rentaroom.pl/" class="cell">
+            <div class="cell-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                />
+              </svg>
+              <small>rentaroom.pl</small>
+            </div>
+            <div class="cell-img">
+              <img src="coop/rentaroom.jpeg" alt="" />
+            </div>
+          </a>
+          <a href="https://rentaroom.olx.pl/" class="cell">
+            <div class="cell-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                />
+              </svg>
+              <small>rentaroom.olx.pl</small>
+            </div>
+            <div class="cell-img">
+              <img src="coop/olx.jpg" alt="" />
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="realizations">
+        <div class="container content">
+          <h1 class="section-title">Réalisations</h1>
+          <h1 class="section-subtitle">Investissements</h1>
+          <div class="box">
+            <br />
+            <br />
+
+            <p>
+              Les investissements immobiliers sûrs sont un moyen pratique
+              d'investir du capital et de gérer des économies, à condition que
+              nous supposions que l'investissement durera plus longtemps. Nous
+              aimerions présenter aux investisseurs des formes d'investissement
+              efficaces, éprouvées et stables. Nous proposons l'achat d'une
+              unité résidentielle destinée à la location en trois variantes :
+            </p>
+            <br />
+            <ul>
+              <li>Room rental</li>
+              <li>Larger unit divided into studios/apartments</li>
+              <li>Studio apartments or two-room apartments</li>
+            </ul>
+            <br />
+            <p>
+              The process involves presenting the offer and the apartment
+              project, carrying out renovations, modernization services, and
+              arrangement with comprehensive equipment and a professional photo
+              session. Then we offer comprehensive rental management, which
+              means that the management of the entire investment is on our side.
+            </p>
+            <!-- <div class="btns">
+              <button class="btn btn-secondary">
+                <span>Więcej</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  />
+                </svg>
+              </button>
+            </div> -->
+          </div>
+          <div class="box p-carousel p-2">
+            <swiper-container
+              class="swiper-container"
+              effect="cube"
+              pagination="true"
+              loop="true"
+            >
+              <swiper-slide>
+                <img
+                  src="https://flyimg.flater.pl/upload/w_640,h_436,c_1/https://son.rentaroom.pl/portal/files/rooms/images/fb530e3744964955d7ec6faebeddc674.jpg?orientation=0"
+                  alt=""
+                />
+              </swiper-slide>
+              <swiper-slide>
+                <img
+                  src="https://flyimg.flater.pl/upload/w_640,h_436,c_1/https://son.rentaroom.pl/portal/files/rooms/images/fb530e3744964955d7ec6faebeddc674.jpg?orientation=0"
+                  alt=""
+                />
+              </swiper-slide>
+              <swiper-slide>
+                <img
+                  src="https://flyimg.flater.pl/upload/w_640,h_436,c_1/https://son.rentaroom.pl/portal/files/rooms/images/fb530e3744964955d7ec6faebeddc674.jpg?orientation=0"
+                  alt=""
+                />
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <div class="section-divider"></div>
+
+          <h1 class="pb-1 section-subtitle">Location</h1>
+          <div class="box">
+            <br />
+            <br />
+
+            <h5 class="pb-1">Nous offrons:</h5>
+            <ul>
+              <li>
+                Des chambres autonomes verrouillables avec une cuisine et une
+                salle de bain communes. Les chambres et la cuisine sont
+                entièrement équipées.
+              </li>
+              <li>
+                Des studios/appartements autonomes avec leur propre salle de
+                bain et kitchenette, confortables et entièrement équipés.
+              </li>
+              <li>Des appartements autonomes.</li>
+            </ul>
+            <!-- <div class="btns">
+              <button class="btn btn-secondary">
+                <span>Więcej</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  />
+                </svg>
+              </button>
+            </div> -->
+          </div>
+          <div class="box p-carousel p-2">
+            <swiper-container
+              class="swiper-container"
+              effect="cube"
+              pagination="true"
+              loop="true"
+            >
+              <swiper-slide>
+                <img
+                  src="https://flyimg.flater.pl/upload/w_640,h_436,c_1/https://son.rentaroom.pl/portal/files/rooms/images/fb530e3744964955d7ec6faebeddc674.jpg?orientation=0"
+                  alt=""
+                />
+              </swiper-slide>
+              <swiper-slide>
+                <img
+                  src="https://flyimg.flater.pl/upload/w_640,h_436,c_1/https://son.rentaroom.pl/portal/files/rooms/images/fb530e3744964955d7ec6faebeddc674.jpg?orientation=0"
+                  alt=""
+                />
+              </swiper-slide>
+              <swiper-slide>
+                <img
+                  src="https://flyimg.flater.pl/upload/w_640,h_436,c_1/https://son.rentaroom.pl/portal/files/rooms/images/fb530e3744964955d7ec6faebeddc674.jpg?orientation=0"
+                  alt=""
+                />
+              </swiper-slide>
+              <div class="swiper-pagination"></div>
+            </swiper-container>
+          </div>
+          <div class="section-divider"></div>
+
+          <h1 class="section-subtitle">Ventes</h1>
+          <div class="box" id="box-sales">
+            <br />
+            <br />
+            <p>
+              Dans notre offre, nous avons des appartements qui ont subi une
+              rénovation, une modernisation et une adaptation approfondies pour
+              répondre à vos attentes. Nous proposons des studios dans des
+              immeubles ou des maisons de maître, ainsi que des appartements
+              modernes de deux et trois pièces. Grâce à de nombreuses années
+              d'expérience, nous assurons des services complets depuis le projet
+              souhaité jusqu'à l'effet souhaité. La satisfaction de nos clients
+              est la plus importante pour nous, c'est pourquoi nous attachons
+              une grande importance à la qualité du travail effectué et à la
+              rapidité. Nous garantissons nos services.
+            </p>
+            <!-- <div class="btns">
+              <button class="btn btn-secondary">
+                <span>Więcej</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  />
+                </svg>
+              </button>
+            </div> -->
+          </div>
+          <div class="box p-carousel p-2">
+            <swiper-container
+              class="swiper-container"
+              effect="cube"
+              pagination="true"
+              loop="true"
+            >
+              <swiper-slide>
+                <img
+                  src="https://flyimg.flater.pl/upload/w_640,h_436,c_1/https://son.rentaroom.pl/portal/files/rooms/images/fb530e3744964955d7ec6faebeddc674.jpg?orientation=0"
+                  alt=""
+                />
+              </swiper-slide>
+              <swiper-slide>
+                <img
+                  src="https://flyimg.flater.pl/upload/w_640,h_436,c_1/https://son.rentaroom.pl/portal/files/rooms/images/fb530e3744964955d7ec6faebeddc674.jpg?orientation=0"
+                  alt=""
+                />
+              </swiper-slide>
+              <swiper-slide>
+                <img
+                  src="https://flyimg.flater.pl/upload/w_640,h_436,c_1/https://son.rentaroom.pl/portal/files/rooms/images/fb530e3744964955d7ec6faebeddc674.jpg?orientation=0"
+                  alt=""
+                />
+              </swiper-slide>
+              <div class="swiper-pagination"></div>
+            </swiper-container>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container content">
+          <h1 class="section-title">Contact</h1>
+          <div class="contact-text">
+            <a href="tel:+503099932" class="contact-row">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                />
+              </svg>
+              <span>503 099 932</span>
+            </a>
+            <a href="mailto:" class="contact-row">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+              <span>biuro@rentaroom.pl</span>
+            </a>
+            <a href="#" class="contact-row">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                />
+              </svg>
+              <span
+                >Łódź, <br />
+                ul.Sierakowskiego 69</span
+              >
+            </a>
+            <p><small>Contact en langue polonaise et anglaise</small></p>
+          </div>
+
+          <div id="map" class="box">Mapa</div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container wide">
+        <img src="logo-bw.svg" alt="" />
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
