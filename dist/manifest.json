@@ -1,14 +1,12 @@
 {
-  "index.css": {
-    "file": "assets/index-53f4ce02.css",
-    "src": "index.css"
-  },
-  "index.html": {
+  "_main-39a8cd5c.js": {
     "css": [
-      "assets/index-53f4ce02.css"
+      "assets/main-eaa34725.css"
     ],
-    "file": "assets/index-c87f003f.js",
-    "isEntry": true,
-    "src": "index.html"
+    "file": "assets/main-39a8cd5c.js"
+  },
+  "main.css": {
+    "file": "assets/main-eaa34725.css",
+    "src": "main.css"
   }
 }

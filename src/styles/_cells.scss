@@ -101,11 +101,11 @@
       img {
         height: 5rem;
       }
+      box-shadow: 5px 5px 3px var(--dark);
       transition: all ease-in-out 0.3s;
       &:hover {
-        box-shadow: 0px 0px 3px #434343;
+        box-shadow: 0px 0px 3px var(--dark);
       }
-      box-shadow: 5px 5px 3px #434343;
       border-radius: 0.2rem;
       padding: 2rem;
       display: flex;

@@ -35,7 +35,9 @@
 a {
   text-decoration: inherit !important;
 }
-
+ul {
+  list-style-position: outside;
+}
 .p-1 {
   padding: 1rem;
 }
@@ -45,5 +47,12 @@ a {
 section {
   p {
     max-width: 60ch;
+  }
+}
+.frame {
+  box-shadow: 0 px 0 px 3px var(--dark) !important;
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 3px var(--dark) !important;
   }
 }
