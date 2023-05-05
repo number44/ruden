@@ -16,6 +16,11 @@ export default defineConfig({
       input: {
         main: resolve(root, "index.html"),
         en: resolve(root, "en.html"),
+        ru: resolve(root, "ru.html"),
+        es: resolve(root, "es.html"),
+        fr: resolve(root, "fr.html"),
+        gr: resolve(root, "gr.html"),
+        it: resolve(root, "it.html"),
       },
     },
   },
