@@ -1,6 +1,6 @@
- <?php 
-  require_once dirname(__FILE__) . "/app/config.php";
-  require_once dirname(__FILE__) . "/vendor/autoload.php";
+<?php 
+
+require_once dirname(__FILE__) . "/app/config.php";
 if(!function_exists("lesio_theme_support")) :
     function lesio_theme_support(){
         add_theme_support( "wp-block-styles" );
@@ -9,7 +9,8 @@ if(!function_exists("lesio_theme_support")) :
 
 endif;
 add_action( "after_setup_theme","lesio_theme_support");
-
+add_post_type_support( 'page', 'excerpt' );
+add_theme_support( 'wp-block-styles' );
 /** Scripts and styles */
 if(!function_exists("lesio_scripts_and_styles")) :
 
@@ -32,33 +33,34 @@ function lesio_scripts_and_styles(){
 
 
 }
-endif;
 add_action(  "wp_enqueue_scripts", "lesio_scripts_and_styles" );
+endif;
 
- if(!function_exists("lesio_enqueue_editor_assets")):
- function lesio_enqueue_editor_assets() {
-     $jsonString = file_get_contents(get_template_directory_uri() . '/dist/manifest.json');
-     $data = json_decode($jsonString, true);
-     $cssScript = $data["index.css"]["file"];
+//  if(!function_exists("lesio_enqueue_editor_assets")):
+//  function lesio_enqueue_editor_assets() {
+//      $jsonString = file_get_contents(get_template_directory_uri() . '/dist/manifest.json');
+//      $data = json_decode($jsonString, true);
+//      $cssScript = $data["index.css"]["file"];
 
-     wp_enqueue_script(
-         'lesio-editor-script', // Script handle
-         get_template_directory_uri() . '/assets/js/block.js'  , // Script source
-         array(), // Dependencies
-         '1.0', // Script version
-         true // Load script in footer
-     );
- }
- endif;
+//      wp_enqueue_script(
+//          'lesio-editor-script', // Script handle
+//          get_template_directory_uri() . '/assets/js/block.js'  , // Script source
+//          array(), // Dependencies
+//          '1.0', // Script version
+//          true // Load script in footer
+//      );
+//  }
+//  endif;
 //  add_action( 'enqueue_block_editor_assets', 'lesio_enqueue_editor_assets' );
- add_theme_support("align-wide");
+//  add_theme_support("align-wide");
 
 
- if(!function_exists("disable_default_block_patterns")):
- function disable_default_block_patterns() {
- }
- endif;
- add_action( 'init', 'disable_default_block_patterns' );
+//  if(!function_exists("disable_default_block_patterns")):
+//  function disable_default_block_patterns() {
+//     return 1;
+//  }
+//  endif;
+//  add_action( 'init', 'disable_default_block_patterns' );
 
 //  if(!function_exists("enqueue_block_scripts")) :
 //     function enqueue_block_scripts() {

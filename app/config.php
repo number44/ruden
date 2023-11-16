@@ -1,35 +1,20 @@
-
 <?php
-
-/**
- * Blocks
- * @return void
- */
- function lesio_blocks_init() {
-    $blocks = array(
-        // "Static/lesio-image",
-        // "Static/lesio-navbar",
-        // "Static/lesio-social",
-        // "Dynamic/pages-links",
-         // "Static/promo-one",
-        // "Static/promo-two",
-        // "Static/promo-three",		
-        // "Static/promo-four",
-    );
-        foreach($blocks as $block) {
-            register_block_type( __DIR__ . '/Blocks/' .  $block .'/build' );
-        }
+function geomat_init() {
+     $blocks = array(
+        
+        // "ds-navbar",
+        // "ds-container",
+     );
+    // get all directories in blocks folder
+    $dirs = scandir(__DIR__ . '/blocks');
+    foreach($dirs as $block) {
+        register_block_type( __DIR__ . '/blocks/' .  $block .'/build' );
+    }
  }
- add_action( 'init', 'lesio_blocks_init' );
+ add_action( 'init', 'geomat_init' );
 
- /**
-  * Crud
-  */
-
-/**
- * getUsersName
- */
-
-//add_action( 'init', 'myplugin_register_template' );
- 
-
+ add_action('init', function() {
+	remove_theme_support('core-block-patterns');
+    unregister_block_pattern_category( 'posts' );
+    unregister_block_pattern_category( 'call-to-action' );
+});

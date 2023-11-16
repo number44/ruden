@@ -1,7 +1,40 @@
 /*
-Theme Name: lesie.eu
-Author : Daniel L.
-Author URI : lesio.eu
-Text Domain : lesio-page
-License : Unlicensed
+Theme Name: M2M3
+Theme URI: https://m2m3.pl/
+Author: Daniel L.
+Author URI: https://lesio.pl/
+Description: Strona m2m3.pl 
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: m2m3.pl
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
+* {
+  box-sizing: border-box;
+}
+.alignright {
+  text-align: right;
+  margin-left: auto;
+}
+figure {
+  float: none;
+}
+.alignleft {
+  margin-right: auto !important;
+  text-align: left;
+}
+.aligncenter {
+  align-self: center;
+  justify-self: center;
+  margin-inline: auto !important;
+  text-align: center;
+}
+#contact {
+  color: white !important;
+}

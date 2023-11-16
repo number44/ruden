@@ -26,11 +26,7 @@
         position: absolute;
         inset: 0;
         content: "";
-        background: linear-gradient(
-          to bottom,
-          rgba(#171717, 0.2),
-          rgba(#0e0e0e, 0.9)
-        );
+        background: linear-gradient(to bottom, rgba(#171717, 0.2), rgba(#0e0e0e, 0.9));
       }
     }
     figure {
@@ -108,7 +104,7 @@
       color: var(--primary-1);
       position: relative;
       overflow: hidden;
-      overflow: hidden;
+
       color: var(--primary);
     }
     p {

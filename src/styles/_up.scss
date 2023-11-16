@@ -1,7 +1,7 @@
 #up {
   box-shadow: 0px 0px 3px var(--primary);
   position: fixed;
-  right: 1rem;
+  left: 1rem;
   bottom: 1rem;
   width: 4rem;
   height: 4rem;
@@ -16,7 +16,7 @@
   border-radius: 0.3rem;
   background: white;
   transform-style: preserve-3d;
-  transform: rotateY(0deg) translateX(calc(2rem + 100%));
+  transform: rotateY(0deg) translateX(calc(-2rem - 100%));
   transform-origin: right;
   transition: all ease-in-out 0.7s;
   cursor: pointer;

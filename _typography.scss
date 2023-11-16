@@ -1,0 +1,44 @@
+:root {
+  --font-title: clamp(5.96rem, calc(15.06rem + -11.75vw), 12.71rem);
+  --font-h1: clamp(4.77rem, calc(10.46rem + -7.35vw), 8.99rem);
+  --font-h2: clamp(3.82rem, calc(7.24rem + -4.42vw), 6.36rem);
+  --font-h3: clamp(3.05rem, calc(5rem + -2.51vw), 4.5rem);
+  --font-h4: clamp(2.44rem, calc(3.44rem + -1.29vw), 3.18rem);
+  --font-h5: clamp(1.95rem, calc(2.35rem + -0.52vw), 2.25rem);
+  --font-h6: clamp(1.56rem, calc(1.6rem + -0.05vw), 1.59rem);
+  --font-p: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  --font--small: clamp(0.8rem, calc(0.72rem + 0.36vw), 1rem);
+}
+
+body {
+  font-size: var(--font-p);
+  line-height: 1.5;
+}
+
+small {
+  font-size: var(--font--small);
+}
+p,
+a,
+li {
+  font-size: var(--font-p);
+}
+
+h1 {
+  font-size: var(--font-h1);
+}
+h2 {
+  font-size: var(--font-h2);
+}
+h3 {
+  font-size: var(--font-h3);
+}
+h4 {
+  font-size: var(--font-h4);
+}
+h5 {
+  font-size: var(--font-h5);
+}
+h6 {
+  font-size: var(--font-h6);
+}

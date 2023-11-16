@@ -4,19 +4,39 @@ import ReactDOM from "react-dom/client";
 // import App from "./App";
 import "./styles.scss";
 import anim from "./utils/anim";
-
-ReactDOM.createRoot(document.getElementById("map") as HTMLElement).render(
-  <React.StrictMode>
-    <PigMap />
-  </React.StrictMode>
-);
-
+const map = document.querySelector("#map") as HTMLElement;
+if (map) {
+  ReactDOM.createRoot(document.getElementById("map") as HTMLElement).render(
+    <React.StrictMode>
+      <PigMap />
+    </React.StrictMode>
+  );
+}
 import detectScroll from "./utils/scrolling";
 const progressBar = document.querySelector(".progress-bar") as HTMLElement;
 const preloader = document.querySelector("#preloader");
 const up = document.querySelector("#up") as HTMLElement;
 const headerElement = document.querySelector("header") as HTMLElement;
 const socials = document.querySelectorAll(".social") as NodeListOf<HTMLElement>;
+//get all elements with data-social
+const socialLinks = document.querySelectorAll(
+  `[data-social]`
+) as NodeListOf<HTMLAnchorElement>;
+
+const initLinks = socialLinks.forEach((link) => {
+  const social = link.dataset.social;
+});
+
+socialLinks.forEach((slink) => {
+  slink.addEventListener("click", () => {
+    const social = slink.dataset.social;
+    window.open(
+      `https://www.${social}.com/${slink.dataset.username}`,
+      "_blank"
+    );
+  });
+});
+
 const scrolling = (sp: number) => {
   const height =
     document.documentElement.scrollHeight -

@@ -5,3 +5,4 @@ vendor
 composer.lock
 functions.php-back
 package-lock.json
+app

@@ -1,12 +1,14 @@
 {
-  "_main-1bbc7fad.js": {
-    "css": [
-      "assets/main-02cd1b77.css"
-    ],
-    "file": "assets/main-1bbc7fad.js"
+  "index.css": {
+    "file": "assets/index-81731245.css",
+    "src": "index.css"
   },
-  "main.css": {
-    "file": "assets/main-02cd1b77.css",
-    "src": "main.css"
+  "index.html": {
+    "css": [
+      "assets/index-81731245.css"
+    ],
+    "file": "assets/index-21599d0f.js",
+    "isEntry": true,
+    "src": "index.html"
   }
 }

@@ -30,13 +30,12 @@
   --dark: #141b2d;
   --hero-img: url("https://images.pexels.com/photos/15663490/pexels-photo-15663490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   --green: hsl(138, 28%, 42%);
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 a {
   text-decoration: none;
@@ -51,6 +50,8 @@ a {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+body {
 }
 img,
 svg,
@@ -78,6 +79,7 @@ body {
   height: auto;
 }
 body {
+  font-family: "Merriweather", serif;
   overflow-x: hidden;
   position: relative;
   background: white;
