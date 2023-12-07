@@ -36,3 +36,6 @@
   width: 115rem !important;
   height: 10rem;
 }
+.hero :is(.subtitle) {
+  color: var(--secondary);
+}

@@ -98,10 +98,12 @@ header {
         display: none;
       }
     }
-
+    svg path {
+      fill: white;
+      transition: fill ease-in-out 0.3s;
+    }
     svg,
     img {
-      stroke: var(--primary);
       height: 6rem;
       transition: height ease-in-out 0.3s;
     }
@@ -153,7 +155,10 @@ header {
 .links {
   position: absolute;
 }
-
+.scrolled :is(.brand svg path) {
+  stroke: ghostwhite;
+  fill: #2b2b2b !important;
+}
 .scrolled {
   background: var(--base);
   box-shadow: var(--shadow);

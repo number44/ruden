@@ -67,3 +67,14 @@
   padding: 0.5rem;
   margin-block-end: 1rem;
 }
+.main-form :is(textarea) {
+}
+.main-form :is(textarea) {
+  background: white;
+  border: none;
+  border: solid 1px #434343;
+  padding: 0.5rem;
+  margin-block-end: 1rem;
+  color: #434343;
+  min-height: 7rem;
+}
