@@ -3,30 +3,29 @@
 @use "./styles/header";
 @use "./styles/progress";
 @use "./styles/typography";
-@use "./styles/cells";
-// @use "./styles/hero";
 @use "./styles/ui";
 @use "./styles/footer";
-// @use "./styles/documents";
-// @use "./styles/goelement";
-// @use "./styles/howto";
-// @use "./styles/requirements";
-// @use "./styles/grids";
 @use "./styles/up";
 @use "./styles/layout";
 @use "./styles/section";
-// @use "./styles/mainh";
-@use "./styles/img-grid";
-@use "./styles/overlay";
-@use "./styles/lang";
-// @use "./styles/grid";
-@use "./styles/stack";
-@use "./styles/socials";
-@use "./styles/contact";
 @use "./styles/aside";
-@use "./styles/accordion";
+@use "./styles/socials";
+@use "./styles/lang";
+@use "./styles/hero";
+@use "./styles/overlay";
+@use "./styles/mainform";
+// @use "./styles/cells";
+// @use "./styles/img-grid";
+// @use "./styles/stack";
+// @use "./styles/contact";
+// @use "./styles/accordion";
+
 body {
   line-height: 1.5;
+}
+.dark {
+  color: #fff;
+  background: var(--dark);
 }
 .swiper {
   width: 100%;
@@ -66,4 +65,7 @@ section {
 .sticky {
   position: sticky !important;
   top: 6.5rem;
+}
+.d-none {
+  display: none;
 }

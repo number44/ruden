@@ -3,6 +3,7 @@ header {
   text-transform: uppercase;
   position: fixed;
   min-height: 6rem;
+  font-size: var(--font-p);
   top: 0;
   left: 0;
   width: 100%;
@@ -154,7 +155,7 @@ header {
 }
 
 .scrolled {
-  background: white;
+  background: var(--base);
   box-shadow: var(--shadow);
   min-height: 6rem !important;
   img {

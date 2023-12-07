@@ -1,0 +1,69 @@
+.main-form {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 2rem;
+  width: min(40rem, 90%);
+  background: var(--base);
+  z-index: 1100;
+  filter: drop-shadow(0 0 3px #434343);
+  border-radius: 0.5rem;
+}
+.hide-main-form {
+  display: none;
+}
+
+.langs {
+  isolation: isolate;
+}
+.lang-list {
+  right: 0;
+  z-index: 1100;
+  position: fixed !important;
+  top: 10vh;
+  right: var(--gap);
+  bottom: 0px;
+  height: 4rem;
+  background: var(--bg-color);
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: var(--shadow);
+
+  gap: 0.5rem;
+  padding: 0.2rem;
+  height: fit-content;
+  transition: transform ease-in-out 0.3s;
+  transform: scale(1);
+  transition-delay: 300ms;
+
+  a {
+    border-radius: 50%;
+
+    aspect-ratio: 1;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+    display: grid;
+    place-content: center;
+    &:hover {
+      background: var(--light);
+    }
+  }
+}
+
+.hide-lang-list {
+  transform: scale(0);
+}
+
+.main-form :is(form) {
+  display: grid;
+  gap: 0.5rem;
+}
+.main-form :is(input[type="text"]) {
+  background: white;
+  border: none;
+  border: solid 1px #434343;
+  padding: 0.5rem;
+  margin-block-end: 1rem;
+}

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
 :root {
   /*----------  media queries  ----------*/
   --xs: 20rem;
@@ -9,6 +8,8 @@
   --md: 75rem;
   --lg: 90rem;
 
+  --base: #fff;
+  --contrast: #1b1b1b;
   --bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(249%2c 249%2c 249%2c 1)'%3e%3c/rect%3e%3cpath d='M-53.49 -21.17 a32.32 32.32 0 1 0 64.64 0 a32.32 32.32 0 1 0 -64.64 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-63.62652465041386 0.2172354370442804L-6.1671405717015375 158.08559572907689 151.70121972033107 100.62621165036455 94.24183564161874-57.242148641668045z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-49.21 -25.46 a23.75 23.75 0 1 0 47.5 0 a23.75 23.75 0 1 0 -47.5 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1265.88 -12.55 a49.57 49.57 0 1 0 99.14 0 a49.57 49.57 0 1 0 -99.14 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1490.7847951926342 133.58369505179127L1464.5038050658754-32.34794616819187 1298.5721638458922-6.066956041433059 1324.853153972651 159.86468517855008z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1252.0871409097108 60.606498545289476L1374.9545627817315 175.18222303578915 1489.5302872722311 52.314801163768415 1366.6628654002104-62.26092332673125z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-75.81237363805022 510.90799378439675L49.03595704215206 623.3219356526848 161.44989891044017 498.4736049724826 36.60156823023789 386.05966310419444z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-69.89 443.23 a65.12 65.12 0 1 0 130.24 0 a65.12 65.12 0 1 0 -130.24 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-30.5953738081319 404.3834177596314L-42.31446139714495 571.9741782032819 125.27629904650551 583.6932657922949 136.99538663551854 416.10250534864446z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1259.966902114114 549.1443556942887L1412.226610336271 620.1442236667262 1483.2264783087087 467.8845154445691 1330.9667700865516 396.8846474721315z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1236.55 464.78 a108.23 108.23 0 1 0 216.46 0 a108.23 108.23 0 1 0 -216.46 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1284.44 416.89 a12.45 12.45 0 1 0 24.9 0 a12.45 12.45 0 1 0 -24.9 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   --main-bg-color: #fff;
   --bg-color: #fff;
@@ -17,12 +18,15 @@
   --shadow: 0px 0px 3px #434343;
   --gap: 1rem;
   --test-size: 1000px;
-  --primary: hsl(335, 62%, 36%);
+  // --primary: rgb(255, 81, 0);
+  --primary: #c20002;
   // --primary: #952352;
 
-  --secondary: hsl(335, 90%, 6%);
-  --primary--1: hsl(335, 62%, 26%);
+  --secondary: #155831;
+  // --primary--1: hsl(335, 62%, 26%);
+  --primary--1: orange;
   --primary--2: hsl(335, 62%, 16%);
+
   --primary-1: hsl(335, 62%, 46%);
   --primary-2: hsl(335, 62%, 56%);
 
@@ -51,8 +55,7 @@ a {
 *::after {
   box-sizing: border-box;
 }
-body {
-}
+
 img,
 svg,
 picture,
@@ -79,7 +82,7 @@ body {
   height: auto;
 }
 body {
-  font-family: "Merriweather", serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   position: relative;
   background: white;
@@ -156,4 +159,12 @@ html {
 
     font-size: 1.2rem;
   }
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1516596338169-57d49948d3d4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }

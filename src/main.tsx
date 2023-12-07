@@ -19,9 +19,7 @@ const up = document.querySelector("#up") as HTMLElement;
 const headerElement = document.querySelector("header") as HTMLElement;
 const socials = document.querySelectorAll(".social") as NodeListOf<HTMLElement>;
 //get all elements with data-social
-const socialLinks = document.querySelectorAll(
-  `[data-social]`
-) as NodeListOf<HTMLAnchorElement>;
+const socialLinks = document.querySelectorAll(`[data-social]`) as NodeListOf<HTMLAnchorElement>;
 
 const initLinks = socialLinks.forEach((link) => {
   const social = link.dataset.social;
@@ -30,17 +28,12 @@ const initLinks = socialLinks.forEach((link) => {
 socialLinks.forEach((slink) => {
   slink.addEventListener("click", () => {
     const social = slink.dataset.social;
-    window.open(
-      `https://www.${social}.com/${slink.dataset.username}`,
-      "_blank"
-    );
+    window.open(`https://www.${social}.com/${slink.dataset.username}`, "_blank");
   });
 });
 
 const scrolling = (sp: number) => {
-  const height =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   const scrolled = (sp / height) * 100;
   progressBar.style.width = scrolled + "%";
   if (scrolled > 5) {
@@ -81,6 +74,25 @@ langBtns?.forEach((langBtn) => {
   langBtn.addEventListener("click", openLang);
 });
 
+const mainform: HTMLElement | null = document.querySelector(".main-form");
+const mainBtns: NodeListOf<HTMLElement> | null = document.querySelectorAll(".form-btn");
+
+mainBtns?.forEach((mainBtn) => {
+  mainBtn.addEventListener("click", openForm);
+});
+
+function openForm() {
+  overlay?.addEventListener("click", closeForm);
+  overlay?.classList.remove("hide-overlay");
+  mainform?.classList.remove("hide-main-form");
+}
+function closeForm() {
+  overlay?.classList.add("hide-overlay");
+  overlay?.removeEventListener("click", closeLang);
+  overlay?.classList.add("hide-overlay");
+
+  mainform?.classList.add("hide-main-form");
+}
 // dropDowns?.forEach((dm) => {
 //   dm.addEventListener("click", dmClicked);
 // });

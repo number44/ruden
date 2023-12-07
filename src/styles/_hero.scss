@@ -1,71 +1,38 @@
-#hero {
-  background-image: var(--bg-image);
-  background-size: cover;
-  background-repeat: no-repeat;
+.hero {
   min-height: 100vh;
-  min-height: 100svh;
-  max-width: 100vw;
-  overflow: hidden;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  .container {
-    flex-grow: 1;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 5rem;
-    padding-top: 10rem;
-    text-align: center;
-    @media (min-width: 60em) {
-      padding-top: 15rem;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media (min-width: 75rem) {
-      text-align: left;
-    }
-    .right {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-self: flex-start;
-      & > * {
-        z-index: 1;
-      }
-      figure {
-        z-index: 1;
-        opacity: 0;
-        position: relative;
-      }
-    }
-  }
 }
-.numbers {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  height: fit-content;
-  @media (min-width: 30em) {
-    /* … */
-    grid-template-columns: repeat(2, 1fr);
-  }
-  gap: 1rem;
+.hero :is(.container) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero :is(.hero-content) {
+  padding: 3rem;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  gap: 1.4rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero :is(.hero-content h1) {
   color: var(--secondary);
-  .number-column {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    .number {
-      margin-top: 1rem;
-      font-weight: 900;
-      font-size: 3rem;
-    }
-  }
 }
-
-@keyframes anim {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 30%;
-  }
+.hero :is(.hero-content p) {
+  font-size: 1.2rem;
+}
+.hero :is(.hero-content .logo) {
+  width: 115rem !important;
+  height: 10rem;
 }
