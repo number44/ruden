@@ -1,7 +1,5 @@
 import anime from "animejs";
-const elementsWithDataNumberAttr = document.querySelectorAll(
-  "[data-number]"
-) as NodeListOf<HTMLElement>;
+const elementsWithDataNumberAttr = document.querySelectorAll("[data-number]") as NodeListOf<HTMLElement>;
 function anim() {
   if (elementsWithDataNumberAttr.length > 0) {
     elementsWithDataNumberAttr.forEach((el, index) => {
