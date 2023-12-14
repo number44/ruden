@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 // import App from "./App";
 import "./styles.scss";
-import anim from "./utils/anim";
+// import anim from "./utils/anim";
 const map = document.querySelector("#map") as HTMLElement;
 if (map) {
   ReactDOM.createRoot(document.getElementById("map") as HTMLElement).render(
@@ -51,7 +51,10 @@ const scrolling = (sp: number) => {
       soc.classList.remove("show");
     });
 
-    headerElement.classList.remove("scrolled");
+    const subheader: HTMLElement | null = document.querySelector(".subheader");
+    if (subheader && !subheader.classList.contains("subheader-show")) {
+      headerElement.classList.remove("scrolled");
+    }
     up.classList.remove("show");
   }
 };
@@ -62,8 +65,9 @@ const init = () => {
   if (preloader) {
     preloader.classList.add("hide-preloader");
   }
-  anim();
+  // anim();
   accordionScript();
+  dropdownsScript();
 };
 window.onload = init;
 const jumpTargets = document.querySelectorAll(`[data-name]`);
@@ -111,12 +115,13 @@ function openLang() {
 }
 
 // import function to register Swiper custom elements
-import { register } from "swiper/element/bundle";
+// import { register } from "swiper/element/bundle";
 import { PigMap } from "./components/PigMap";
 import debounce from "./utils/debounce";
+import dropdownsScript from "./scripts/dropdowns";
 // register Swiper custom elements
 
-register();
+// register();
 
 const hamburger = document.querySelector(".hamburger") as HTMLDivElement;
 const aside = document.querySelector("aside") as HTMLElement;

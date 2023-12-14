@@ -1,5 +1,7 @@
 .lang-btn {
-  border-left: 0.1rem black solid;
+  font-family: Arial, Helvetica, sans-serif;
+
+  position: relative;
   display: flex;
   align-items: center;
   padding-left: var(--gap);
@@ -10,10 +12,26 @@
   gap: 0.5rem;
   z-index: 1;
   cursor: pointer;
+  font-weight: 600;
   svg {
     height: 1rem;
     width: 1rem;
   }
+}
+.lang-btn:hover {
+  color: var(--primary) !important;
+}
+.lang-btn::after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 1px;
+  inset-inline-start: 0;
+  background: #ccc;
+  transition: height ease-in-out 0.3s;
+}
+.scrolled :is(.lang-btn)::after {
+  height: 100% !important;
 }
 // .lang-dropdown {
 //   border-left: 0.1rem black solid;

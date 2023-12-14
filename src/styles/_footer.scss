@@ -1,28 +1,43 @@
 footer {
-  background: var(--dark);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-block: 3rem;
-  color: var(--secondary);
-  padding-bottom: 7rem;
-  background: var(--primary);
-  color: var(--light);
-  z-index: 12;
-  box-shadow: 0px 0px 3px var(--primary);
-  .container {
-    letter-spacing: 0.5rem;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 900;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img,
-    svg {
-      margin-top: 4rem;
-      width: 10rem;
-    }
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url("/section/footer-bg.svg");
+  color: white;
+  padding-block: 5rem;
+}
+footer :is(.footer-grid) {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  @media (min-width: 60rem) {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
+
+footer :is(form) {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 1rem;
+}
+footer :is(input[type="text"]) {
+  background: white;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  border: inherit;
+  outline: inherit;
+  color: var(--contrast);
+  border-radius: 0.2rem;
+}
+form:is(input[type="text"]):focus {
+}
+footer :is(input)::placeholder {
+  color: grey;
+  font-weight: 700;
+}
+footer :is(input[type="submit"]) {
+  width: max-content;
+}
+footer :is(input[type="submit"]) {
+  width: max-content;
 }

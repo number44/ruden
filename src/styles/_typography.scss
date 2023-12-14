@@ -27,7 +27,7 @@
   --font-title: clamp(5.96rem, calc(15.06rem + -11.75vw), 12.71rem);
 }
 body {
-  color: var(--dark);
+  color: var(--contrast);
   line-height: 1.5;
   letter-spacing: 0.1rem;
 }
@@ -40,6 +40,7 @@ h6 {
   font-family: var(--font-family);
   font-weight: 400;
   font-weight: 900;
+  line-height: 1.4;
 }
 h1 {
   font-size: var(--wp--custom--typography--font-size--heading-1);

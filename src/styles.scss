@@ -1,6 +1,7 @@
 @use "./styles/global";
 @use "./styles/preloader";
 @use "./styles/header";
+@use "./styles/subheader";
 @use "./styles/progress";
 @use "./styles/typography";
 @use "./styles/ui";
@@ -11,9 +12,13 @@
 @use "./styles/aside";
 @use "./styles/socials";
 @use "./styles/lang";
+@use "./styles/heros";
 @use "./styles/hero";
 @use "./styles/overlay";
 @use "./styles/mainform";
+@use "./styles/leasing";
+@use "./styles/faktoring";
+@use "./styles/grids";
 // @use "./styles/cells";
 // @use "./styles/img-grid";
 // @use "./styles/stack";
